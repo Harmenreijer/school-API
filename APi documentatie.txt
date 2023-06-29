@@ -1,0 +1,38 @@
+APi documentatie: 
+er is een API_token nodig, dit is: k8h5J7B
+Helaas laatte xampp mij geen sql dump maken, maar de code zelf spreekt voor zich
+
+er zijn 3 categorieën
+	categorie 1: 
+	Bedrijven
+		CreateCompany	
+			params: 
+				"Name","Omschrijving","Email","TelefoonNmr"
+		GetCompany
+			params: 
+				"CompanyID" OF "Name"
+		RemoveCompany
+			params:
+				"CompanyID"
+		UpdateCompany
+			params: "UpdateCollumn","UpdateValue","CompanyID"
+	Category:	
+		CreateCategory
+			params:
+				"Name" , "omschrijving"
+		GetCategory
+			params: 
+				"CategoryID" OF Name
+		RemoveCategory
+			params: 
+				"CategoryID"
+		UpdateCategory
+			params: 
+				"UpdateCollumn","UpdateValue","CategoryID"
+	Couple:
+		CreateCouple:
+			params: "CompanyID","CategoryID"
+		RemoveCouple:
+			params: "Category_ID","Company_ID"
+		GetCompanyCategory: 
+			params: "Company_ID"
